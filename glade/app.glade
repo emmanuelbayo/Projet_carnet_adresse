@@ -1,0 +1,1313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkAboutDialog" id="AboutDialogWindow">
+    <property name="can_focus">False</property>
+    <property name="icon">../../../Téléchargements/phonebook1.png</property>
+    <property name="type_hint">dialog</property>
+    <property name="program_name">Mon carnet d'adresse </property>
+    <property name="version">V 1.0.0</property>
+    <property name="website">https://github.com/emmanuelbayo</property>
+    <property name="website_label" translatable="yes">Github</property>
+    <property name="authors">Patrick BAYO
+Etudiant en science informatique
+ESATIC, Côte d'Ivoire
+Mai 2020</property>
+    <property name="logo">../image/phonebook1.png</property>
+    <property name="license_type">gpl-2-0</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="AddContactWindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Mon carnet d'adresse</property>
+    <property name="resizable">False</property>
+    <property name="default_width">650</property>
+    <property name="default_height">650</property>
+    <property name="icon">../image/phonebook1.png</property>
+    <signal name="destroy" handler="on_AddContactWindow_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLayout" id="layout_lbl1">
+            <property name="width_request">500</property>
+            <property name="height_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="width_request">100</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">../image/addcontact1.png</property>
+              </object>
+              <packing>
+                <property name="x">95</property>
+                <property name="y">55</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="ajouterContact">
+                <property name="width_request">337</property>
+                <property name="height_request">59</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Ajouter un contact</property>
+                <property name="wrap">True</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 20"/>
+                  <attribute name="style" value="normal"/>
+                  <attribute name="weight" value="bold"/>
+                  <attribute name="foreground" value="#cece5c5b0000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">182</property>
+                <property name="y">74</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLayout" id="layout_form">
+            <property name="width_request">400</property>
+            <property name="height_request">400</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="border_width">2</property>
+            <child>
+              <object class="GtkSeparator">
+                <property name="width_request">600</property>
+                <property name="height_request">27</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">17</property>
+                <property name="y">15</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">139</property>
+                <property name="height_request">43</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Nom :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">131</property>
+                <property name="y">48</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">138</property>
+                <property name="height_request">40</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Prenom :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">112</property>
+                <property name="y">100</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">216</property>
+                <property name="height_request">43</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Numéro Téléphone :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">13</property>
+                <property name="y">142</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">108</property>
+                <property name="height_request">56</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Adresse :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">121</property>
+                <property name="y">247</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="EntreePrenom">
+                <property name="width_request">319</property>
+                <property name="height_request">33</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="placeholder_text" translatable="yes">Entrez le prénom</property>
+              </object>
+              <packing>
+                <property name="x">237</property>
+                <property name="y">105</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="EntreeNumero">
+                <property name="width_request">319</property>
+                <property name="height_request">33</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="placeholder_text" translatable="yes">Entrez le numéro</property>
+              </object>
+              <packing>
+                <property name="x">237</property>
+                <property name="y">153</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="EntreeAdresse">
+                <property name="width_request">319</property>
+                <property name="height_request">33</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="secondary_icon_activatable">False</property>
+                <property name="placeholder_text" translatable="yes">Entrez l'adresse</property>
+              </object>
+              <packing>
+                <property name="x">237</property>
+                <property name="y">259</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="creeContact">
+                <property name="label" translatable="yes">Enregistrer le contact</property>
+                <property name="width_request">350</property>
+                <property name="height_request">46</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_creeContact_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">136</property>
+                <property name="y">312</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="EntreeNom">
+                <property name="width_request">319</property>
+                <property name="height_request">33</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="placeholder_text" translatable="yes">Entrez le nom</property>
+              </object>
+              <packing>
+                <property name="x">237</property>
+                <property name="y">54</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="EntreeGenre">
+                <property name="width_request">319</property>
+                <property name="height_request">33</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <items>
+                  <item translatable="yes">Masculin</item>
+                  <item translatable="yes">Feminin</item>
+                </items>
+              </object>
+              <packing>
+                <property name="x">238</property>
+                <property name="y">204</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">130</property>
+                <property name="height_request">39</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Genre :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                  <attribute name="style" value="normal"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">120</property>
+                <property name="y">198</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkDialog" id="AlertDeleteContactDialog">
+    <property name="width_request">400</property>
+    <property name="height_request">80</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Mon carnet d'adresse</property>
+    <property name="type_hint">dialog</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <object class="GtkButton" id="cancelBtnDeleteContact">
+                <property name="label" translatable="yes">Annuler</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_cancelBtnDeleteContact_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="confBtnDeleteContact">
+                <property name="label" translatable="yes">Confirmer</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_confBtnDeleteContact_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLayout">
+            <property name="width_request">300</property>
+            <property name="height_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="width_request">104</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">../image/warning.png</property>
+              </object>
+              <packing>
+                <property name="x">1</property>
+                <property name="y">9</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">324</property>
+                <property name="height_request">40</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Voulez-vous supprimer ce contact ?</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 11"/>
+                  <attribute name="weight" value="bold"/>
+                  <attribute name="foreground" value="#efef29292929"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">72</property>
+                <property name="y">32</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="EditContactWindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Mon carnet d'adresse</property>
+    <property name="resizable">False</property>
+    <property name="default_width">650</property>
+    <property name="default_height">650</property>
+    <property name="icon">../image/phonebook1.png</property>
+    <signal name="destroy" handler="on_EditContactWindow_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLayout" id="layout_titleEdit">
+            <property name="width_request">500</property>
+            <property name="height_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="EditContact">
+                <property name="width_request">337</property>
+                <property name="height_request">59</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Modifier le contact</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 20"/>
+                  <attribute name="style" value="normal"/>
+                  <attribute name="weight" value="bold"/>
+                  <attribute name="foreground" value="#cece5c5a0000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">192</property>
+                <property name="y">71</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage">
+                <property name="width_request">89</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">../image/editcontact.png</property>
+              </object>
+              <packing>
+                <property name="x">111</property>
+                <property name="y">49</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLayout" id="layout_formEdit">
+            <property name="width_request">500</property>
+            <property name="height_request">400</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkSeparator">
+                <property name="width_request">601</property>
+                <property name="height_request">27</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">14</property>
+                <property name="y">13</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">136</property>
+                <property name="height_request">49</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Nom : </property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">134</property>
+                <property name="y">75</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">133</property>
+                <property name="height_request">56</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Prenom :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">113</property>
+                <property name="y">134</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">234</property>
+                <property name="height_request">51</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Numéro Téléphone :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">4</property>
+                <property name="y">188</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">131</property>
+                <property name="height_request">48</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Adresse :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">110</property>
+                <property name="y">253</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="EntreeEditNom">
+                <property name="width_request">324</property>
+                <property name="height_request">36</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="placeholder_text" translatable="yes">Entrez le nom</property>
+              </object>
+              <packing>
+                <property name="x">239</property>
+                <property name="y">84</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="EntreeEditPrenom">
+                <property name="width_request">323</property>
+                <property name="height_request">36</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="placeholder_text" translatable="yes">Entrez le prénom</property>
+              </object>
+              <packing>
+                <property name="x">239</property>
+                <property name="y">144</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="EntreeEditNumero">
+                <property name="width_request">323</property>
+                <property name="height_request">36</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="placeholder_text" translatable="yes">Entrez le numéro</property>
+              </object>
+              <packing>
+                <property name="x">239</property>
+                <property name="y">201</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="EntreeEditAdresse">
+                <property name="width_request">320</property>
+                <property name="height_request">36</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="placeholder_text" translatable="yes">Entrez l'adresse</property>
+              </object>
+              <packing>
+                <property name="x">239</property>
+                <property name="y">261</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="ValidEditBtn">
+                <property name="label" translatable="yes">Enregistrer la modification</property>
+                <property name="width_request">370</property>
+                <property name="height_request">46</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_ValidEditBtn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">136</property>
+                <property name="y">318</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="margin_left">18</property>
+    <property name="margin_right">8</property>
+    <property name="pixbuf">../image/addcontact.png</property>
+  </object>
+  <object class="GtkImage" id="image2">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="margin_left">6</property>
+    <property name="margin_right">8</property>
+    <property name="pixbuf">../image/contact.png</property>
+  </object>
+  <object class="GtkImage" id="image3">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="margin_right">8</property>
+    <property name="pixbuf">../image/info.png</property>
+  </object>
+  <object class="GtkWindow" id="MainWindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Carnet  d'adresse</property>
+    <property name="resizable">False</property>
+    <property name="default_width">650</property>
+    <property name="default_height">650</property>
+    <property name="icon">../image/phonebook1.png</property>
+    <signal name="destroy" handler="on_MainWindow_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLayout" id="layout_lbl">
+            <property name="width_request">500</property>
+            <property name="height_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="date_lbl">
+                <property name="width_request">202</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <attributes>
+                  <attribute name="foreground" value="#f5f579780000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">290</property>
+                <property name="y">15</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage">
+                <property name="width_request">100</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">../image/phonebook1.png</property>
+              </object>
+              <packing>
+                <property name="x">77</property>
+                <property name="y">54</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="titleCarnet">
+                <property name="width_request">337</property>
+                <property name="height_request">59</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Mon carnet d'adresse</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 20"/>
+                  <attribute name="style" value="normal"/>
+                  <attribute name="weight" value="bold"/>
+                  <attribute name="foreground" value="#cece5c5b0000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">176</property>
+                <property name="y">73</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLayout" id="layout_btn">
+            <property name="width_request">400</property>
+            <property name="height_request">400</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="border_width">1</property>
+            <child>
+              <object class="GtkButton" id="addContactBtn">
+                <property name="label" translatable="yes">Ajouter un contact</property>
+                <property name="width_request">384</property>
+                <property name="height_request">49</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="image">image1</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_addContactBtn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">143</property>
+                <property name="y">78</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="viewContactBtn">
+                <property name="label" translatable="yes">Mes contacts</property>
+                <property name="width_request">384</property>
+                <property name="height_request">49</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="image">image2</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_viewContactBtn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">142</property>
+                <property name="y">158</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="aboutBtn">
+                <property name="label" translatable="yes">A propros</property>
+                <property name="width_request">380</property>
+                <property name="height_request">49</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="image">image3</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_aboutBtn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">143</property>
+                <property name="y">236</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparator">
+                <property name="width_request">605</property>
+                <property name="height_request">27</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">18</property>
+                <property name="y">13</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkImage" id="image4">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">../image/edit.png</property>
+  </object>
+  <object class="GtkImage" id="image5">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">../image/delete.png</property>
+  </object>
+  <object class="GtkWindow" id="ShowContactWindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Mon carnet d'adresse</property>
+    <property name="resizable">False</property>
+    <property name="default_width">650</property>
+    <property name="default_height">650</property>
+    <property name="icon">../image/phonebook1.png</property>
+    <signal name="destroy" handler="on_ShowContactWindow_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLayout" id="layout_titleShow">
+            <property name="width_request">500</property>
+            <property name="height_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="ShowContact">
+                <property name="width_request">337</property>
+                <property name="height_request">59</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Mon Contact</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 20"/>
+                  <attribute name="style" value="normal"/>
+                  <attribute name="weight" value="bold"/>
+                  <attribute name="foreground" value="#cece5c5a0000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">192</property>
+                <property name="y">72</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage">
+                <property name="width_request">100</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">../image/Person.png</property>
+              </object>
+              <packing>
+                <property name="x">162</property>
+                <property name="y">54</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLayout" id="layout_ShowContact">
+            <property name="width_request">500</property>
+            <property name="height_request">400</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkSeparator">
+                <property name="width_request">603</property>
+                <property name="height_request">27</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">18</property>
+                <property name="y">13</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">139</property>
+                <property name="height_request">43</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Nom :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">128</property>
+                <property name="y">78</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">139</property>
+                <property name="height_request">43</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Prenom :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">112</property>
+                <property name="y">130</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">247</property>
+                <property name="height_request">43</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Numéro Téléphone : </property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">4</property>
+                <property name="y">188</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="width_request">139</property>
+                <property name="height_request">43</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Adresse :</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">105</property>
+                <property name="y">241</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="EditContactBtn">
+                <property name="label" translatable="yes">Modifier contact</property>
+                <property name="width_request">257</property>
+                <property name="height_request">46</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="image">image4</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_EditContactBtn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">45</property>
+                <property name="y">311</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="DeleteContactBtn">
+                <property name="label" translatable="yes">Supprimer contact</property>
+                <property name="width_request">266</property>
+                <property name="height_request">46</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="image">image5</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_DeleteContactBtn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">352</property>
+                <property name="y">309</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="ShowNomContact">
+                <property name="width_request">245</property>
+                <property name="height_request">38</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">241</property>
+                <property name="y">78</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="ShowPrenomContact">
+                <property name="width_request">243</property>
+                <property name="height_request">39</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">248</property>
+                <property name="y">132</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="ShowNumeroContact">
+                <property name="width_request">242</property>
+                <property name="height_request">39</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">238</property>
+                <property name="y">187</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="ShowAdressContact">
+                <property name="width_request">221</property>
+                <property name="height_request">39</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch 15"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">250</property>
+                <property name="y">244</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkListStore" id="liststore1">
+    <columns>
+      <!-- column-name nomC -->
+      <column type="gchararray"/>
+      <!-- column-name prenomC -->
+      <column type="gchararray"/>
+      <!-- column-name numeroC -->
+      <column type="gchararray"/>
+      <!-- column-name adresseC -->
+      <column type="gchararray"/>
+      <!-- column-name dateC -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="ViewContactWindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Mon carnet d'adresse</property>
+    <property name="resizable">False</property>
+    <property name="default_width">650</property>
+    <property name="default_height">650</property>
+    <property name="icon">../image/phonebook1.png</property>
+    <signal name="destroy" handler="on_ViewContactWindow_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLayout" id="layout_title">
+            <property name="width_request">500</property>
+            <property name="height_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="border_width">1</property>
+            <child>
+              <object class="GtkImage">
+                <property name="width_request">100</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">../image/contact1.png</property>
+              </object>
+              <packing>
+                <property name="x">93</property>
+                <property name="y">22</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="ListContact">
+                <property name="width_request">345</property>
+                <property name="height_request">57</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Liste des contacts</property>
+                <attributes>
+                  <attribute name="font-desc" value="Courier 10 Pitch Bold Italic 20"/>
+                  <attribute name="style" value="normal"/>
+                  <attribute name="weight" value="bold"/>
+                  <attribute name="foreground" value="#cece5c5a0000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">171</property>
+                <property name="y">40</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSearchEntry" id="searchContact">
+                <property name="width_request">264</property>
+                <property name="height_request">37</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="primary_icon_name">edit-find-symbolic</property>
+                <property name="primary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">False</property>
+                <property name="placeholder_text" translatable="yes">Recherchez un numéro</property>
+                <signal name="changed" handler="on_searchContact_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">351</property>
+                <property name="y">102</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLayout" id="layout_list">
+            <property name="width_request">400</property>
+            <property name="height_request">450</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkScrolledWindow">
+                <property name="width_request">599</property>
+                <property name="height_request">362</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="shadow_type">in</property>
+                <child>
+                  <object class="GtkTreeView" id="treeviewContact">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="model">liststore1</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection" id="selectContact"/>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="nomC">
+                        <property name="title" translatable="yes">Nom</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="rendernomC"/>
+                          <attributes>
+                            <attribute name="text">0</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="prenomC">
+                        <property name="title" translatable="yes">Prenom</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="renderprenomsc"/>
+                          <attributes>
+                            <attribute name="text">1</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="numeroC">
+                        <property name="title" translatable="yes">Numéro Téléphone</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="rendernumC"/>
+                          <attributes>
+                            <attribute name="text">2</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="adresseC">
+                        <property name="title" translatable="yes">Adresse</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="renderadressC"/>
+                          <attributes>
+                            <attribute name="text">3</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn">
+                        <property name="title" translatable="yes">Modifié le</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="renderdateC"/>
+                          <attributes>
+                            <attribute name="text">4</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="x">21</property>
+                <property name="y">14</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="AddViewContactBtn">
+                <property name="label" translatable="yes">Ajouter contact</property>
+                <property name="width_request">136</property>
+                <property name="height_request">46</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_AddViewContactBtn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">12</property>
+                <property name="y">383</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="ShowContactBtn">
+                <property name="label" translatable="yes">Afficher le contact</property>
+                <property name="width_request">146</property>
+                <property name="height_request">46</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_ShowContactBtn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">158</property>
+                <property name="y">383</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="StatContactBtn">
+                <property name="label" translatable="yes">Voir les statistiques</property>
+                <property name="width_request">147</property>
+                <property name="height_request">46</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_StatContactBtn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">316</property>
+                <property name="y">385</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="exportContact">
+                <property name="label" translatable="yes">Exporter les contacts</property>
+                <property name="width_request">157</property>
+                <property name="height_request">43</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_exportContact_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">472</property>
+                <property name="y">386</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
