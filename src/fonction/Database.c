@@ -37,7 +37,7 @@ void Connect_db(MYSQL *con){
   
     static char *host = "localhost";
     static char *dbuser = "Patrick";
-    static char *dbpassw = "Nono@012369";
+    static char *dbpassw = "password";
 
     if(con == NULL){
         fprintf(stderr,"mysql_init() a échoué. \n");
